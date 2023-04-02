@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Mascotas Felices</title>
 
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/style_registro.css" />
@@ -16,8 +16,9 @@
     />
   </head>
   <body>
+    <!-- HEADER NAV-BAR -->
     <header
-      class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
+      class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom" style="margin-inline: 5%;"
     >
       <a
         href="/"
@@ -34,12 +35,10 @@
         <li class="nav-item">
           <a href="index.html" class="nav-link active" aria-current="page">Inicio</a>
         </li>
-        <li class="nav-item"><a href="#" class="nav-link">Nosotros</a></li>
+        <li class="nav-item"><a href="nosotros.html" class="nav-link">Nosotros</a></li>
 
-        <button type="button" class="btn btn-outline-primary me-2">
-          Ingresar
-        </button>
-        <button type="button" class="btn btn-primary">Registrarse</button>
+        <a href="login.html"><button type="button" class="btn btn-outline-primary me-2">Ingresar</button></a>
+        <a href="registro.html"><button type="button" class="btn btn-primary">Crea tu cuenta</button></a>
       </ul>
     </header>
 
@@ -48,7 +47,7 @@
     <br />
 
     <!-- formulario de cliente -->
-    <form class="row g-3 needs-validation" novalidate>
+    <form  class="row g-3 needs-validation" novalidate>
       <div class="container-fluid">
         <!-- todos los datos del cliente -->
         <div class="row">
@@ -173,7 +172,7 @@
             <!-- password -->
             <div class="mb-3">
               <label for="password" class="form-label">Password</label>
-              <input type="password" class="form-control"id="password" required>
+              <input required type="password" class="form-control"id="password" >
               <div class="invalid-feedback">
                 Por favor ingrese una contraseña
               </div>
@@ -181,7 +180,7 @@
             <!-- confirmar password -->
             <div class="mb-3">
               <label for="exampleInputPassword1" class="form-label">Confirmar Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
+              <input required type="password" class="form-control" id="exampleInputPassword1">
               <div class="invalid-feedback">Las contraseñas no coinciden</div>
 
             </div>
@@ -223,7 +222,7 @@
           </div>
         </div>
         <!-- botones -->
-        <div class="row">
+        <div class="row-cols">
           <button type="submit" class="btn btn-primary">Guardar</button>
           <button type="submit" class="btn btn-primary">Nuevo</button>
           <button type="reset" class="btn btn-primary">Eliminar</button>
